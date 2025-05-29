@@ -53,6 +53,7 @@ public class Livro {
     public void setAutor(String autor) {
         this.autor = autor;
     }
-
-
+    public String toString() {
+        return id + ";" + titulo + ";" + autor + ";" + anoDePublicacao + ";" + isbn + ";" + (disponibilidade ? "s" : "n");
+    }
 }
