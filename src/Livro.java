@@ -1,3 +1,6 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Livro {
     private String id;
     private String titulo;
@@ -27,6 +30,8 @@ public class Livro {
     }
 
     public boolean getDisponibilidade() {
+        switch (disponibilidade ? "sim" : "não") {
+        }
         return disponibilidade;
     }
 
@@ -53,7 +58,21 @@ public class Livro {
     public void setAutor(String autor) {
         this.autor = autor;
     }
+
     public String toString() {
         return id + ";" + titulo + ";" + autor + ";" + anoDePublicacao + ";" + isbn + ";" + (disponibilidade ? "s" : "n");
+    }
+
+    public void salvarLivro(Livro livro) {
+        try {
+            FileWriter escritorL = new FileWriter("livros.txt", true);
+            escritorL.write(livro.toString() + "\n");
+
+            escritorL.close();
+        } catch (IOException e) {
+            System.out.println("Erro ao salvar livro.");
+            e.printStackTrace();
+
+        }
     }
 }

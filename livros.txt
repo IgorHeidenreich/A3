@@ -1,0 +1,5 @@
+1;Duna;Frank Herbert;1965;9780575068568;s
+2;Fundamentos da metafisica dos costumes;Imannuel Kant;1797;9780090360307;s
+3;Os meninos da rua paulo;Ferenc Molnár;1906;9788804519973;s
+4;A arte da guerra;Sun Tzu;500 A.C;9780140439199;s
+5;Os elementos;Euclides;300 A.C;9788571399358;n
